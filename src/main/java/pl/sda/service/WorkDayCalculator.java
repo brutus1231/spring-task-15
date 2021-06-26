@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Component
 public class WorkDayCalculator implements DayCalculator {
 
-    public boolean isWorkingDay(LocalDate date) {
+    public boolean isCorrect(LocalDate date) {
         DayOfWeek dayOfWeek = date.getDayOfWeek();
         return dayOfWeek != DayOfWeek.SATURDAY && dayOfWeek != DayOfWeek.SUNDAY;
     }

@@ -13,7 +13,7 @@ public class MessageSender {
     private final WorkDayCalculator workDayCalculator;
 
     public void send(String message, LocalDate date) {
-        if (workDayCalculator.isWorkingDay(date)) {
+        if (workDayCalculator.isCorrect(date)) {
             System.out.println("Wysłano wiadomość: " + message);
             return;
         }

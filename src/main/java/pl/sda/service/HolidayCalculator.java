@@ -7,7 +7,7 @@ import java.time.LocalDate;
 @Component
 public class HolidayCalculator implements DayCalculator {
 
-    public boolean isHoliday(LocalDate date) {
+    public boolean isCorrect(LocalDate date) {
         return false;
     }
 }
