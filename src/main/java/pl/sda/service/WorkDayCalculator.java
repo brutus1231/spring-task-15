@@ -2,14 +2,13 @@ package pl.sda.service;
 
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Component
 public class WorkDayCalculator {
 
-    public boolean isWorkingDay(Date date) {
-
-        return true;
+    public boolean isWorkingDay(LocalDate date) {
+        return date.getDayOfWeek().getValue() <= 5;
     }
 
 }
