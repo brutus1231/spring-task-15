@@ -1,7 +1,6 @@
 package pl.sda.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -10,10 +9,11 @@ import java.time.LocalDate;
 @RequiredArgsConstructor
 public class MessageSender {
 
-    private final WorkDayCalculator workDayCalculator;
+    private final DayCalculator calculator;
 
     public void send(String message, LocalDate date) {
-        if (workDayCalculator.isCorrect(date)) {
+        System.out.println(calculator.getClass().getName());
+        if (calculator.isCorrect(date)) {
             System.out.println("Wysłano wiadomość: " + message);
             return;
         }

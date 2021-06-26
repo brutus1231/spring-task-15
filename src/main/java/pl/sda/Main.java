@@ -6,7 +6,6 @@ import pl.sda.config.ApplicationConfiguration;
 import pl.sda.service.MessageSender;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Main {
 
