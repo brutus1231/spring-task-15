@@ -6,7 +6,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 @Component
-public class WorkDayCalculator {
+public class WorkDayCalculator implements DayCalculator {
 
     public boolean isWorkingDay(LocalDate date) {
         DayOfWeek dayOfWeek = date.getDayOfWeek();

@@ -1,6 +1,7 @@
 package pl.sda.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -18,5 +19,10 @@ public class MessageSender {
         }
         System.out.println("Dzień nie jest dniem roboczym");
     }
+
+//    @Autowired
+//    public void setWorkDayCalculator(WorkDayCalculator workDayCalculator){
+//        this.workDayCalculator = workDayCalculator
+//    }
 
 }
